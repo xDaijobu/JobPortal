@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="JobPortal.Pages.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White">
+    <Shell.TitleView>
+        <Grid ColumnDefinitions="Auto,*">
+            <Label
+                Grid.Column="0"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Text="Hi, John!"
+                TextColor="Black"
+                VerticalOptions="Center" />
+
+            <StackLayout
+                Grid.Column="1"
+                HorizontalOptions="EndAndExpand"
+                Orientation="Horizontal"
+                Spacing="15"
+                VerticalOptions="Center">
+
+                <!--  Email  -->
+                <Path
+                    Data="M1 4L8.89 9.26C9.21866 9.47928 9.6049 9.5963 10 9.5963C10.3951 9.5963 10.7813 9.47928 11.11 9.26L19 4M3 15H17C17.5304 15 18.0391 14.7893 18.4142 14.4142C18.7893 14.0391 19 13.5304 19 13V3C19 2.46957 18.7893 1.96086 18.4142 1.58579C18.0391 1.21071 17.5304 1 17 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V13C1 13.5304 1.21071 14.0391 1.58579 14.4142C1.96086 14.7893 2.46957 15 3 15Z"
+                    HeightRequest="20"
+                    Stroke="#3D3F40"
+                    StrokeLineCap="Round"
+                    StrokeLineJoin="Round"
+                    StrokeThickness="1.5"
+                    VerticalOptions="Center"
+                    WidthRequest="20" />
+
+                <!--  Bookmark  -->
+                <Path
+                    Data="M13 1V13L9 11L5 13V1H13ZM3 17H15C15.5304 17 16.0391 16.7893 16.4142 16.4142C16.7893 16.0391 17 15.5304 17 15V3C17 2.46957 16.7893 1.96086 16.4142 1.58579C16.0391 1.21071 15.5304 1 15 1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17Z"
+                    HeightRequest="20"
+                    Stroke="#3D3F40"
+                    StrokeLineCap="Round"
+                    StrokeLineJoin="Round"
+                    StrokeThickness="1.5"
+                    VerticalOptions="Center"
+                    WidthRequest="20" />
+
+                <!--  TODO Cris: hack buat iOS ( hrus cri alternatif lain lg)  -->
+                <OnPlatform x:TypeArguments="View">
+                    <OnPlatform.iOS>
+                        <!--  Notiication a.k.a Bell  -->
+                        <Path
+                            Data="M12 15H6M12 15H17L15.595 13.595C15.4063 13.4063 15.2567 13.1822 15.1546 12.9357C15.0525 12.6891 15 12.4249 15 12.158V9C15.0002 7.75894 14.6156 6.54834 13.8992 5.53489C13.1829 4.52144 12.17 3.75496 11 3.341V3C11 2.46957 10.7893 1.96086 10.4142 1.58579C10.0391 1.21071 9.53043 1 9 1C8.46957 1 7.96086 1.21071 7.58579 1.58579C7.21071 1.96086 7 2.46957 7 3V3.341C4.67 4.165 3 6.388 3 9V12.159C3 12.697 2.786 13.214 2.405 13.595L1 15H6H12ZM12 15V16C12 16.7956 11.6839 17.5587 11.1213 18.1213C10.5587 18.6839 9.79565 19 9 19C8.20435 19 7.44129 18.6839 6.87868 18.1213C6.31607 17.5587 6 16.7956 6 16V15H12Z"
+                            HeightRequest="20"
+                            Stroke="#3D3F40"
+                            StrokeLineCap="Round"
+                            StrokeLineJoin="Round"
+                            StrokeThickness="1.5"
+                            VerticalOptions="Center"
+                            WidthRequest="20" />
+                    </OnPlatform.iOS>
+                </OnPlatform>
+
+                <!--  Notiication a.k.a Bell  -->
+                <Path
+                    Data="M12 15H6M12 15H17L15.595 13.595C15.4063 13.4063 15.2567 13.1822 15.1546 12.9357C15.0525 12.6891 15 12.4249 15 12.158V9C15.0002 7.75894 14.6156 6.54834 13.8992 5.53489C13.1829 4.52144 12.17 3.75496 11 3.341V3C11 2.46957 10.7893 1.96086 10.4142 1.58579C10.0391 1.21071 9.53043 1 9 1C8.46957 1 7.96086 1.21071 7.58579 1.58579C7.21071 1.96086 7 2.46957 7 3V3.341C4.67 4.165 3 6.388 3 9V12.159C3 12.697 2.786 13.214 2.405 13.595L1 15H6H12ZM12 15V16C12 16.7956 11.6839 17.5587 11.1213 18.1213C10.5587 18.6839 9.79565 19 9 19C8.20435 19 7.44129 18.6839 6.87868 18.1213C6.31607 17.5587 6 16.7956 6 16V15H12Z"
+                    HeightRequest="20"
+                    Stroke="#3D3F40"
+                    StrokeLineCap="Round"
+                    StrokeLineJoin="Round"
+                    StrokeThickness="1.5"
+                    VerticalOptions="Center"
+                    WidthRequest="20" />
+            </StackLayout>
+        </Grid>
+    </Shell.TitleView>
+
+    <StackLayout>
+        <StackLayout BackgroundColor="{StaticResource Dark20}" Orientation="Vertical">
+            <Label
+                Margin="{OnPlatform Android='16,16,5,0',
+                                    iOS='10,15,5,15'}"
+                Text="Start searching your dream job"
+                TextColor="{StaticResource Dark90}"
+                VerticalTextAlignment="Center" />
+
+            <Grid
+                Margin="{OnPlatform Android='16,0,5,0',
+                                    iOS='10,0,5,15'}"
+                ColumnDefinitions="*,Auto"
+                RowDefinitions="Auto">
+                <ScrollView
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="StartAndExpand"
+                    HorizontalScrollBarVisibility="Never"
+                    Orientation="Horizontal"
+                    VerticalScrollBarVisibility="Never">
+                    <StackLayout Orientation="Horizontal">
+                        <BindableLayout.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>UX Designer</x:String>
+                                <x:String>UI Designer</x:String>
+                                <x:String>Product Designer</x:String>
+                                <x:String>UX Designer</x:String>
+                                <x:String>UI Designer</x:String>
+                                <x:String>Product Designer</x:String>
+                            </x:Array>
+                        </BindableLayout.ItemsSource>
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Frame
+                                    Padding="10,0,10,0"
+                                    BorderColor="LightGray"
+                                    CornerRadius="5"
+                                    HasShadow="False"
+                                    HorizontalOptions="Start">
+                                    <Label
+                                        FontSize="9"
+                                        Text="UX Designer"
+                                        TextColor="{StaticResource Dark100}"
+                                        VerticalTextAlignment="Center" />
+                                </Frame>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </ScrollView>
+
+                <Frame
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Padding="10,5,10,5"
+                    BackgroundColor="#4A76E8"
+                    CornerRadius="15"
+                    HasShadow="False"
+                    HorizontalOptions="End">
+                    <Path
+                        Margin="7.5,0,7.5,0"
+                        Data="M11 3.99984V1.6665M11 3.99984C10.3811 3.99984 9.78763 4.24567 9.35004 4.68325C8.91246 5.12084 8.66663 5.71433 8.66663 6.33317C8.66663 6.95201 8.91246 7.5455 9.35004 7.98309C9.78763 8.42067 10.3811 8.6665 11 8.6665M11 3.99984C11.6188 3.99984 12.2123 4.24567 12.6499 4.68325C13.0875 5.12084 13.3333 5.71433 13.3333 6.33317C13.3333 6.95201 13.0875 7.5455 12.6499 7.98309C12.2123 8.42067 11.6188 8.6665 11 8.6665M11 8.6665V20.3332M3.99996 17.9998C4.6188 17.9998 5.21229 17.754 5.64987 17.3164C6.08746 16.8788 6.33329 16.2853 6.33329 15.6665C6.33329 15.0477 6.08746 14.4542 5.64987 14.0166C5.21229 13.579 4.6188 13.3332 3.99996 13.3332M3.99996 17.9998C3.38112 17.9998 2.78763 17.754 2.35004 17.3164C1.91246 16.8788 1.66663 16.2853 1.66663 15.6665C1.66663 15.0477 1.91246 14.4542 2.35004 14.0166C2.78763 13.579 3.38112 13.3332 3.99996 13.3332M3.99996 17.9998V20.3332M3.99996 13.3332V1.6665M18 17.9998C18.6188 17.9998 19.2123 17.754 19.6499 17.3164C20.0875 16.8788 20.3333 16.2853 20.3333 15.6665C20.3333 15.0477 20.0875 14.4542 19.6499 14.0166C19.2123 13.579 18.6188 13.3332 18 13.3332M18 17.9998C17.3811 17.9998 16.7876 17.754 16.35 17.3164C15.9125 16.8788 15.6666 16.2853 15.6666 15.6665C15.6666 15.0477 15.9125 14.4542 16.35 14.0166C16.7876 13.579 17.3811 13.3332 18 13.3332M18 17.9998V20.3332M18 13.3332V1.66656"
+                        Stroke="White"
+                        StrokeLineCap="Round"
+                        StrokeLineJoin="Round"
+                        StrokeThickness="1.5" />
+                </Frame>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout Margin="{OnPlatform Android='16,16,5,0', iOS='10,15,5,0'}">
+            <Grid RowDefinitions="Auto, Auto" RowSpacing="20">
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Text="View History"
+                    TextColor="{StaticResource Dark100}" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    HorizontalOptions="EndAndExpand"
+                    Text="View All"
+                    TextColor="{StaticResource Sapphire}" />
+
+
+
+                <CollectionView
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    HeightRequest="150"
+                    HorizontalOptions="StartAndExpand"
+                    HorizontalScrollBarVisibility="Always"
+                    ItemSizingStrategy="MeasureFirstItem">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                            <x:String>1</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame
+                                Padding="0"
+                                BorderColor="#E4E8EC"
+                                CornerRadius="5"
+                                HasShadow="False"
+                                WidthRequest="300">
+                                <StackLayout Margin="15" Spacing="10">
+                                    <Grid
+                                        ColumnDefinitions="Auto, Auto, *"
+                                        ColumnSpacing="15"
+                                        HorizontalOptions="FillAndExpand"
+                                        RowDefinitions="Auto, Auto"
+                                        RowSpacing="0">
+                                        <Image
+                                            Grid.RowSpan="2"
+                                            Grid.Column="0"
+                                            HeightRequest="25"
+                                            Source="https://cdn.discordapp.com/attachments/693541168033562667/958998684371132466/unknown.png"
+                                            WidthRequest="25" />
+
+                                        <Label
+                                            Grid.Row="0"
+                                            Grid.Column="1"
+                                            FontAttributes="Bold"
+                                            Text="Visual Designer"
+                                            TextColor="{StaticResource Dark100}" />
+                                        <Label
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            Text="PT.Loremipsum"
+                                            TextColor="{StaticResource Dark80}" />
+
+                                        <StackLayout
+                                            Grid.RowSpan="2"
+                                            Grid.Column="2"
+                                            HorizontalOptions="EndAndExpand"
+                                            Orientation="Horizontal"
+                                            Spacing="30"
+                                            VerticalOptions="CenterAndExpand">
+                                            <Path
+                                                Data="M6.63577 15.4555L0.75 18.7254V2.22222C0.75 1.80775 0.898905 1.4241 1.14326 1.1526C1.38526 0.883702 1.69551 0.75 2 0.75H12C12.3045 0.75 12.6147 0.883702 12.8567 1.1526C13.1011 1.4241 13.25 1.80775 13.25 2.22222V18.7254L7.36423 15.4555C7.13772 15.3297 6.86228 15.3297 6.63577 15.4555Z"
+                                                HeightRequest="20"
+                                                Stroke="#0A00A0A"
+                                                StrokeLineCap="Round"
+                                                StrokeLineJoin="Round"
+                                                StrokeThickness="1.5"
+                                                VerticalOptions="Center"
+                                                WidthRequest="14" />
+
+                                            <Path
+                                                Data="M2 2V2.01V2ZM2 9V9.01V9ZM2 16V16.01V16ZM2 3C1.73478 3 1.48043 2.89464 1.29289 2.70711C1.10536 2.51957 1 2.26522 1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1C2.26522 1 2.51957 1.10536 2.70711 1.29289C2.89464 1.48043 3 1.73478 3 2C3 2.26522 2.89464 2.51957 2.70711 2.70711C2.51957 2.89464 2.26522 3 2 3ZM2 10C1.73478 10 1.48043 9.89464 1.29289 9.70711C1.10536 9.51957 1 9.26522 1 9C1 8.73478 1.10536 8.48043 1.29289 8.29289C1.48043 8.10536 1.73478 8 2 8C2.26522 8 2.51957 8.10536 2.70711 8.29289C2.89464 8.48043 3 8.73478 3 9C3 9.26522 2.89464 9.51957 2.70711 9.70711C2.51957 9.89464 2.26522 10 2 10ZM2 17C1.73478 17 1.48043 16.8946 1.29289 16.7071C1.10536 16.5196 1 16.2652 1 16C1 15.7348 1.10536 15.4804 1.29289 15.2929C1.48043 15.1054 1.73478 15 2 15C2.26522 15 2.51957 15.1054 2.70711 15.2929C2.89464 15.4804 3 15.7348 3 16C3 16.2652 2.89464 16.5196 2.70711 16.7071C2.51957 16.8946 2.26522 17 2 17Z"
+                                                HeightRequest="18"
+                                                Stroke="#0A0A0A"
+                                                StrokeLineCap="Round"
+                                                StrokeLineJoin="Round"
+                                                StrokeThickness="1.5"
+                                                VerticalOptions="Center" />
+                                        </StackLayout>
+                                    </Grid>
+                                    <Frame
+                                        Padding="5,2.5"
+                                        BackgroundColor="#EBFFEB"
+                                        BorderColor="#73BF88"
+                                        CornerRadius="5"
+                                        HasShadow="False"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="EndAndExpand">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Micro"
+                                            Text="Beginner"
+                                            TextColor="#73BF88" />
+                                    </Frame>
+
+                                    <Label VerticalOptions="EndAndExpand" VerticalTextAlignment="Center">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span
+                                                    FontAttributes="Bold"
+                                                    FontSize="Small"
+                                                    Text="IDr. 6.200.000" />
+                                                <Span
+                                                    FontSize="Micro"
+                                                    Text="    o    "
+                                                    TextColor="#989B9D" />
+                                                <Span FontSize="Small" Text="South Jakarta" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
